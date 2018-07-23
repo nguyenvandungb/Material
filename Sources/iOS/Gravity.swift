@@ -50,28 +50,28 @@ public enum Gravity: Int {
 public func GravityToValue(gravity: Gravity) -> String {
   switch gravity {
   case .center:
-    return kCAGravityCenter
+    return CALayerContentsGravity.center.rawValue
   case .top:
-    return kCAGravityTop
+    return CALayerContentsGravity.top.rawValue
   case .bottom:
-    return kCAGravityBottom
+    return CALayerContentsGravity.bottom.rawValue
   case .left:
-    return kCAGravityLeft
+    return CALayerContentsGravity.left.rawValue
   case .right:
-    return kCAGravityRight
+    return CALayerContentsGravity.right.rawValue
   case .topLeft:
-    return kCAGravityBottomLeft
+    return CALayerContentsGravity.bottomLeft.rawValue
   case .topRight:
-    return kCAGravityBottomRight
+    return CALayerContentsGravity.bottomRight.rawValue
   case .bottomLeft:
-    return kCAGravityTopLeft
+    return CALayerContentsGravity.topLeft.rawValue
   case .bottomRight:
-    return kCAGravityTopRight
+    return CALayerContentsGravity.topRight.rawValue
   case .resize:
-    return kCAGravityResize
+    return CALayerContentsGravity.resize.rawValue
   case .resizeAspect:
-    return kCAGravityResizeAspect
+    return CALayerContentsGravity.resizeAspect.rawValue
   case .resizeAspectFill:
-    return kCAGravityResizeAspectFill
+    return CALayerContentsGravity.resizeAspectFill.rawValue
   }
 }

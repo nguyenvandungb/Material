@@ -102,7 +102,7 @@ open class TableViewCell: UITableViewCell, Pulseable, PulseableLayer {
    - Parameter style: A UITableViewCellStyle enum.
    - Parameter reuseIdentifier: A String identifier.
    */
-  public override init(style: UITableViewCellStyle, reuseIdentifier: String!) {
+  public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String!) {
     super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
     prepare()
   }

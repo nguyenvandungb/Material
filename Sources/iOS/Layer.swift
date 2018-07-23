@@ -89,18 +89,18 @@ open class Layer: CAShapeLayer {
   /// A Preset for the contentsGravity property.
   open var contentsGravityPreset: Gravity {
     didSet {
-      contentsGravity = GravityToValue(gravity: contentsGravityPreset)
+      contentsGravity = CALayerContentsGravity(rawValue: GravityToValue(gravity: contentsGravityPreset))
     }
   }
   
   /// Determines how content should be aligned within the visualLayer's bounds.
   @IBInspectable
-  open override var contentsGravity: String {
+  open override var contentsGravity: CALayerContentsGravity {
     get {
-      return visualLayer.contentsGravity
+      return CALayerContentsGravity(rawValue: visualLayer.contentsGravity.rawValue)
     }
-    set(value) {
-      visualLayer.contentsGravity = value
+    set {
+      visualLayer.contentsGravity = CALayerContentsGravity(rawValue: contentsGravity.rawValue)
     }
   }
   

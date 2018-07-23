@@ -119,10 +119,10 @@ open class View: UIView {
   @IBInspectable
   open var contentsGravity: String {
     get {
-      return visualLayer.contentsGravity
+      return visualLayer.contentsGravity.rawValue
     }
     set(value) {
-      visualLayer.contentsGravity = value
+      visualLayer.contentsGravity = CALayerContentsGravity(rawValue: value)
     }
   }
   

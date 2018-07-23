@@ -267,7 +267,7 @@ open class Button: UIButton, Pulseable, PulseableLayer {
       return
     }
     
-    bringSubview(toFront: v)
+    bringSubviewToFront(v)
   }
   
   /**
