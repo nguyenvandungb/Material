@@ -57,7 +57,7 @@ public protocol TextStorageDelegate: NSTextStorageDelegate {
 
 open class TextStorage: NSTextStorage {
   /// A storage facility for attributed text.
-  open let storage = NSMutableAttributedString()
+  public let storage = NSMutableAttributedString()
   
   /// The regular expression to match text fragments against.
   open var expression: NSRegularExpression?

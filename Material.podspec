@@ -10,10 +10,10 @@ Pod::Spec.new do |s|
  	s.source = { :git => 'https://github.com/nguyenvandungb/Material.git', :tag => s.version }
 
 	s.default_subspec = 'Core'
-	s.platform = :ios, '8.0'
+	s.platform = :ios, '10.0'
 
 	s.subspec 'Core' do |s|
-		s.ios.deployment_target = '8.0'
+		s.ios.deployment_target = '10.0'
 		s.ios.source_files = 'Sources/**/*.swift'
 		s.requires_arc = true
 		s.resource_bundles = {
